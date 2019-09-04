@@ -16,7 +16,7 @@ export class ArticlesComponent implements OnInit {
     this.api.getArticles().subscribe(
       (res: any) => {
         this.data = res;
-        console.log("get data", res);
+        // console.log("get data", res);
         this.isLoadingResults = false;
       },
       err => {

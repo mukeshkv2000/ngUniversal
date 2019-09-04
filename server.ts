@@ -46,7 +46,6 @@ const {
   provideModuleMap
 } = require("./dist/server/main");
 
-// Our Universal express-engine (found @ https://github.com/angular/universal/tree/master/modules/express-engine)
 app.engine(
   "html",
   ngExpressEngine({

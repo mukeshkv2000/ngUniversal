@@ -27,7 +27,7 @@ export class ShowArticleComponent implements OnInit {
   getArticleDetails(id: any) {
     this.api.getArticle(id).subscribe((data: any) => {
       this.article = data;
-      console.log(this.article);
+      console.log("article detail", this.article);
       this.isLoadingResults = false;
     });
   }

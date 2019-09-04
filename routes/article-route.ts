@@ -1,5 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 import Article from "../models/article";
+
 export class ArticleRoute {
   public articleRoute(app): void {
     app
@@ -23,7 +24,6 @@ export class ArticleRoute {
           res.json(article);
         });
       });
-
     app
       .route("/api/")
       .post((req: Request, res: Response, next: NextFunction) => {
